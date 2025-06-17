@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Volume Déménagement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Volume Calc">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link rel="icon" href="icons/icon-192x192.png">
+</head>
+<body>
+    <header>
+        <h1>Calculateur de Volume</h1>
+        <p class="total-volume">Volume total estimé : <span id="totalVolume">0.00</span> m³</p>
+    </header>
+
+    <main>
+        <section class="category-section">
+            <h2>Salon - Salle à manger</h2>
+            <div class="items-grid" id="salonItems">
+                </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Chambre</h2>
+            <div class="items-grid" id="chambreItems">
+                </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Cuisine</h2>
+            <div class="items-grid" id="cuisineItems">
+                </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Autres</h2>
+            <div class="items-grid" id="autresItems">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <button id="downloadPdfBtn">Télécharger l'estimation PDF</button>
+    </footer>
+
+    <script src="jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
